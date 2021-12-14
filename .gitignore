@@ -1,0 +1,4 @@
+yarn.lock
+.parcel-cache
+node_modules
+lib
