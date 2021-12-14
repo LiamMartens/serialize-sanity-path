@@ -1,6 +1,6 @@
 {
   "name": "serialize-sanity-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "source": "./src/index.ts",
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",

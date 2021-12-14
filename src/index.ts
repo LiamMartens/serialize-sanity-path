@@ -5,7 +5,7 @@ import type { Path } from '@sanity/types';
  * Just pulled it apart and typed it as it can be useful standalon
  */
 export function serializePath(path: Path) {
-  return path.reduce((target, part, i) => {
+  return path.reduce<string>((target, part, i) => {
     const isIndex = typeof part === 'number';
     const isNumericStringKey = !isIndex && typeof part === 'string' && isFinite(parseInt(part, 10));
     const seperator = i === 0 ? '' : '.'
